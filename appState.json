@@ -1,0 +1,89 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "cb72affa-cf04-4409-8be2-c566570d973d": {
+        "id": "cb72affa-cf04-4409-8be2-c566570d973d",
+        "parent": null,
+        "name": "test-franfurt",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "85778c60-e652-425b-8f27-7f6455108e97"
+        ],
+        "isRemovable": false,
+        "filePath": "test-franfurt"
+      },
+      "85778c60-e652-425b-8f27-7f6455108e97": {
+        "id": "85778c60-e652-425b-8f27-7f6455108e97",
+        "parent": "cb72affa-cf04-4409-8be2-c566570d973d",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test-franfurt/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "4bb07f3a-2915-4262-b156-e2c298c6c4d2": {
+        "id": "4bb07f3a-2915-4262-b156-e2c298c6c4d2",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.testFranfurtfunction = require(\"./test-franfurt/function.js\").handler;"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "cb72affa-cf04-4409-8be2-c566570d973d",
+    "openFiles": [
+      "85778c60-e652-425b-8f27-7f6455108e97"
+    ],
+    "currentFileId": "85778c60-e652-425b-8f27-7f6455108e97",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test-franfurt",
+    "projectDescription": "test",
+    "projectVersion": "1.0.0",
+    "projectRegion": "europe-west3",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1559894835967
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test-franfurt",
+      "url": "https://github.com/HirudineeADRT/test-franfurt"
+    }
+  }
+}
